@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openModal()" >Submit</button>
+        <div class="popup" id="popup">
+            <img src="accept.png">
+            <h2>Thank You!</h2>
+            <p>Your details have been successfully submitted.</p>
+            <button type="button" onclick="closeModal()" >Ok</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById('popup');
+
+        function openModal(){
+            popup.classList.add('open-popup')
+        }
+
+        function closeModal(){
+            popup.classList.remove('open-popup')
+        }
+
+    </script>
+</body>
+
+</html>
