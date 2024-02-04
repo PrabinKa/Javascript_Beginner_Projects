@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Protest Revolution', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #bbc6fa;
+}
+.quotes-box{
+    background-color: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0, 0.15);
+}
+.quotes-box h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.quotes-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+}
+.quotes-box blockquote{
+    font-size: 22px;
+    min-height: 110px;
+}
+.quotes-box blockquote::before, .quotes-box blockquote::after{
+    content: '"';
+}
+.quotes-box span{
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+}
+.quotes-box span::before{
+    content: '';
+    width: 15px;
+    height: 3px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quotes-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quotes-box button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.quotes-box button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.quotes-box button:nth-child(2){
+    background: transparent;
+    color: #222;
+}
